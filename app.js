@@ -3,20 +3,28 @@ var express 		= require('express'),
 		exphbs  		= require('express-handlebars');
 
 
+// Config Vars
+// ====================================================================================
+var port = process.env.PORT || 3000;
+
+
 // View Engine
 // ====================================================================================
 app.engine('handlebars', exphbs({defaultLayout: 'default'}));
-app.set('view engine', 'handlebars');		
+app.set('view engine', 'handlebars');	
 
 
 
+// Routes
+// ====================================================================================
+var master_routes = require('./routes/master')(app);
 
-app.get('/', function (req, res) {
-    res.render('dashboard');
-});
+// Static File Handling
+app.use(express.static(__dirname + '/public'));
 
-var port = process.env.PORT || 3000;
 
-app.listen(port)
+// Start the Server
+// ====================================================================================
+var server = app.listen(port)
 
-console.log("Active on Port " + port);
+console.log("Server listening on Port " + port);
