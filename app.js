@@ -1,6 +1,7 @@
 var express 		= require('express'),
 		app 				= express(),
-		exphbs  		= require('express-handlebars');
+		exphbs  		= require('express-handlebars'),
+		db 					= require('./config/db');
 
 
 // Config Vars

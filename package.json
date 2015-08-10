@@ -4,6 +4,7 @@
   "description": "Basic Node Starting point for Express and Mongo with Gulp",
   "main": "app.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,9 +17,12 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3",
-    "express-handlebars": "^2.0.1"
+    "express-handlebars": "^2.0.1",
+    "mongoose": "^4.1.1"
   },
   "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.3",
     "nodemon": "^1.4.0"
   }
 }
