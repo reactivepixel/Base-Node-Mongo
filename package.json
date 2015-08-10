@@ -1,0 +1,24 @@
+{
+  "name": "projdelta",
+  "version": "0.1.0",
+  "description": "Basic Node Starting point for Express and Mongo with Gulp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "startingPoint",
+    "node",
+    "mongo",
+    "express"
+  ],
+  "author": "Chris Chapman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.4.0"
+  }
+}
