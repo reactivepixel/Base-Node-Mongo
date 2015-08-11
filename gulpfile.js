@@ -11,8 +11,8 @@ gulp.task('mongod', function(){
 gulp.task('dev', function () {
   nodemon({
     script: 'app.js'
-  , ext: 'js html'
-  , env: { 'NODE_ENV': 'development' }
+  , ext: 'js handlebars'
+  , env: { 'PORT': 3000 }
   })
 })
 
