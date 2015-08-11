@@ -4,7 +4,7 @@
   "description": "Basic Node Starting point for Express and Mongo with Gulp",
   "main": "app.js",
   "scripts": {
-    "start": "gulp",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
